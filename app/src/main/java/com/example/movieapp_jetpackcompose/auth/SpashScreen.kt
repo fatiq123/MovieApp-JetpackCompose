@@ -14,8 +14,12 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.sp
 import com.example.movieapp_jetpackcompose.R
+import com.ramcosta.composedestinations.annotation.Destination
+import com.ramcosta.composedestinations.annotation.RootNavGraph
 import kotlinx.coroutines.delay
 
+@Destination
+@RootNavGraph(start = true)
 @Composable
 fun SplashScreen() {
 

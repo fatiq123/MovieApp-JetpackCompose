@@ -24,7 +24,9 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import coil.compose.AsyncImage
 import com.example.movieapp_jetpackcompose.R
+import com.ramcosta.composedestinations.annotation.Destination
 
+@Destination
 @Composable
 fun WelcomeScreen() {
     Box(
