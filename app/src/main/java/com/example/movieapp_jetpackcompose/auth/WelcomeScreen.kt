@@ -82,7 +82,8 @@ fun WelcomeScreen() {
                     }
 
                     OutlinedButton(
-                        onClick = { /*TODO*/ },
+                        onClick = {
+                        },
                         modifier = Modifier
                             .fillMaxWidth()
                             .height(50.dp)

@@ -12,6 +12,7 @@ import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.sp
 import com.example.movieapp_jetpackcompose.R
 import com.ramcosta.composedestinations.annotation.Destination
@@ -38,13 +39,20 @@ fun SplashScreen() {
     ) {
         Text(
             text = stringResource(R.string.hello),
-            fontSize = 50.sp,
+            fontSize = 30.sp,
             fontWeight = FontWeight.Bold,
             color = Color.White
         )
     }
 
     LaunchedEffect(key1 = Unit) {
-        delay(2000)
+        delay(6000)
     }
+}
+
+
+@Preview
+@Composable
+fun PreviewSplashScreen() {
+    SplashScreen()
 }

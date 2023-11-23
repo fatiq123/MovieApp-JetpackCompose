@@ -142,7 +142,7 @@ fun SignInScreen() {
         }
 
         Button(
-            onClick = { /*ToDo*/ },
+            onClick = {  TODO() },
             Modifier
                 .fillMaxWidth()
                 .height(50.dp),
@@ -160,5 +160,5 @@ fun SignInScreen() {
 @Preview(showSystemUi = true)
 @Composable
 fun SignInScreenPreview() {
-    SignInScreen()
+//    SignInScreen()
 }
