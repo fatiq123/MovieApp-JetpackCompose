@@ -1,7 +1,11 @@
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
-    id("com.google.devtools.ksp") version "1.8.10-1.0.9" // Depends on your kotlin version
+    id("com.google.devtools.ksp") version "1.8.10-1.0.9"
+    id("com.google.gms.google-services") // Depends on your kotlin version
+
+    id("kotlin-kapt")
+    id("com.google.dagger.hilt.android")
 }
 
 android {
@@ -79,5 +83,19 @@ dependencies {
     implementation("io.github.raamcosta.compose-destinations:core:1.9.52")  // previous
     implementation("io.github.raamcosta.compose-destinations:core:1.9.52")
     ksp("io.github.raamcosta.compose-destinations:ksp:1.9.52")
+
+    // Firebase
+    implementation("com.google.firebase:firebase-auth:22.3.0")
+
+
+    // Dagger - Hilt
+    implementation("com.google.dagger:hilt-android:2.44")
+    kapt("com.google.dagger:hilt-android-compiler:2.44")
+    kapt("androidx.hilt:hilt-compiler:1.1.0")
+    implementation("androidx.hilt:hilt-navigation-compose:1.1.0")
+
+
+    //Google auth dependency
+    implementation("com.google.android.gms:play-services-auth:20.7.0")
 
 }

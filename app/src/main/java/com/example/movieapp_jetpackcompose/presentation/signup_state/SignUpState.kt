@@ -1,7 +1,8 @@
-package com.example.movieapp_jetpackcompose.presentation
+package com.example.movieapp_jetpackcompose.presentation.signup_state
 
-data class LoginInState(
+data class SignUpState(
     val isLoading: Boolean = false,
     val isSuccess: String? = "",
     val isError: String? = ""
+
 )

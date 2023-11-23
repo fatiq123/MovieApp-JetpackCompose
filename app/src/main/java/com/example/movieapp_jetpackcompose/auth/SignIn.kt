@@ -42,6 +42,7 @@ import androidx.compose.ui.unit.sp
 import com.example.movieapp_jetpackcompose.R
 import com.ramcosta.composedestinations.annotation.Destination
 
+/*
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 @Destination
@@ -54,7 +55,9 @@ fun SignInScreen() {
         horizontalAlignment = Alignment.Start,
         verticalArrangement = Arrangement.SpaceEvenly
     ) {
-        IconButton(onClick = { /*ToDo*/ }) {
+        IconButton(onClick = { */
+/*ToDo*//*
+ }) {
             Icon(
                 imageVector = Icons.Filled.ArrowBack,
                 contentDescription = stringResource(id = R.string.arrow_back)
@@ -161,4 +164,4 @@ fun SignInScreen() {
 @Composable
 fun SignInScreenPreview() {
 //    SignInScreen()
-}
+}*/

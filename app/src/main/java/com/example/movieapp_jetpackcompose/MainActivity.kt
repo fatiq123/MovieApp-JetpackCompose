@@ -46,11 +46,23 @@ import androidx.compose.ui.unit.dp
 import com.example.movieapp_jetpackcompose.auth.NavGraphs
 import com.example.movieapp_jetpackcompose.navigation.NavigationGraph
 import com.example.movieapp_jetpackcompose.ui.theme.MovieAppJetpackComposeTheme
+import com.google.firebase.Firebase
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.auth
 import com.ramcosta.composedestinations.DestinationsNavHost
+import dagger.hilt.android.AndroidEntryPoint
 
-
+@AndroidEntryPoint
 class MainActivity : ComponentActivity() {
+
+    private lateinit var auth: FirebaseAuth
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
+
+        auth = Firebase.auth
+
+
         super.onCreate(savedInstanceState)
         setContent {
             MovieAppJetpackComposeTheme {
@@ -61,7 +73,31 @@ class MainActivity : ComponentActivity() {
             }
         }
     }
+
+   /* override fun onStart() {
+        super.onStart()
+        // Check if user is signed in (non-null) and update UI accordingly.
+        val currentUser = auth.currentUser
+        if (currentUser != null) {
+            reload()
+        }
+    }
+
+    private fun reload() {
+
+    }*/
 }
+
+
+
+
+
+
+
+
+
+
+
 
 
 @Composable
