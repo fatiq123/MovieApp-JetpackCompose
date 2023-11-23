@@ -12,7 +12,20 @@
           "package_name": "com.example.movieapp_jetpackcompose"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "1085600747695-9kkj25qi3sk8c4710v4d7i2b8hgd0emq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.movieapp_jetpackcompose",
+            "certificate_hash": "01fc4ba36cb0ce10ee1e60be43dc355c7f05f813"
+          }
+        },
+        {
+          "client_id": "1085600747695-rme2ca99qd9tvm0eu8g6ulb7q22guceo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyAma7h_Gu4fyFgUiLBdvaID9ZZmJHIUvSA"
@@ -20,7 +33,12 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1085600747695-rme2ca99qd9tvm0eu8g6ulb7q22guceo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         }
       }
     }

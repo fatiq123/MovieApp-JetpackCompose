@@ -43,6 +43,7 @@ import androidx.hilt.navigation.compose.hiltViewModel
 import com.example.movieapp_jetpackcompose.R
 import com.example.movieapp_jetpackcompose.ui.theme.RegularFont
 import com.example.movieapp_jetpackcompose.ui.theme.lightBlue
+import com.example.movieapp_jetpackcompose.utils.Constants.ServerClient
 import com.google.android.gms.auth.api.signin.GoogleSignIn
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions
 import com.google.android.gms.common.api.ApiException
@@ -160,14 +161,14 @@ fun SignInScreen(
             horizontalArrangement = Arrangement.Center
         ) {
             IconButton(onClick = {
-         /*     val gso = GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
+                val gso = GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
                     .requestEmail()
                     .requestIdToken(ServerClient)
                     .build()
 
                 val googleSingInClient = GoogleSignIn.getClient(context, gso)
 
-                launcher.launch(googleSingInClient.signInIntent)*/
+                launcher.launch(googleSingInClient.signInIntent)
 
             }) {
                 Icon(
